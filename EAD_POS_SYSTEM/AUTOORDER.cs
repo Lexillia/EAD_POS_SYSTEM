@@ -16,5 +16,10 @@ namespace EAD_POS_SYSTEM
         {
             InitializeComponent();
         }
+
+        private void pnltop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

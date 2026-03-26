@@ -68,6 +68,7 @@
             this.pnltop.Name = "pnltop";
             this.pnltop.Size = new System.Drawing.Size(836, 178);
             this.pnltop.TabIndex = 2;
+            this.pnltop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnltop_Paint);
             // 
             // lblAOsubtitle
             // 
@@ -155,9 +156,9 @@
             this.lblsubtitle.ForeColor = System.Drawing.Color.White;
             this.lblsubtitle.Location = new System.Drawing.Point(18, 50);
             this.lblsubtitle.Name = "lblsubtitle";
-            this.lblsubtitle.Size = new System.Drawing.Size(312, 18);
+            this.lblsubtitle.Size = new System.Drawing.Size(360, 18);
             this.lblsubtitle.TabIndex = 4;
-            this.lblsubtitle.Text = "Smart restocking with automated order suggestions";
+            this.lblsubtitle.Text = "Smart restocking with automated order suggestions change";
             // 
             // dgvAOCustomerlist
             // 
