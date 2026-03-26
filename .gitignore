@@ -1,0 +1,41 @@
+# Visual Studio / VSCode / .NET Framework ignores
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# Build outputs
+bin/
+obj/
+Debug/
+Release/
+*/bin/
+*/obj/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Resharper
+_ReSharper*/
+*.ReSharper*/
+*.DotSettings.user
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Others
+*.log
+*.DS_Store
+*.cache
