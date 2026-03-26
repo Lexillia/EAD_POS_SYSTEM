@@ -156,9 +156,9 @@
             this.lblsubtitle.ForeColor = System.Drawing.Color.White;
             this.lblsubtitle.Location = new System.Drawing.Point(18, 50);
             this.lblsubtitle.Name = "lblsubtitle";
-            this.lblsubtitle.Size = new System.Drawing.Size(360, 18);
+            this.lblsubtitle.Size = new System.Drawing.Size(312, 18);
             this.lblsubtitle.TabIndex = 4;
-            this.lblsubtitle.Text = "Smart restocking with automated order suggestions change";
+            this.lblsubtitle.Text = "Smart restocking with automated order suggestions";
             // 
             // dgvAOCustomerlist
             // 
