@@ -19,13 +19,13 @@ namespace EAD_POS_SYSTEM
             this.Load += MdiParent_Load;
         }
 
-        private void MdiParent_Load(object sender, EventArgs e)
+        public void MdiParent_Load(object sender, EventArgs e)
         {
             // This automatically "clicks" the Dashboard menu item for you
             dASHBOARDToolStripMenuItem_Click(sender, e);
         }
 
-        private void dASHBOARDToolStripMenuItem_Click(object sender, EventArgs e)
+        public void dASHBOARDToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // 1. Close any other open child forms first
             foreach (Form child in this.MdiChildren)
@@ -44,7 +44,7 @@ namespace EAD_POS_SYSTEM
             newChild.Show();
         }
 
-        private void pOSToolStripMenuItem_Click(object sender, EventArgs e)
+       public void pOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // 1. Close any other open child forms first
             foreach (Form child in this.MdiChildren)
@@ -63,7 +63,7 @@ namespace EAD_POS_SYSTEM
             newChild.Show();
         }
 
-        private void CUSTOMERS_Click(object sender, EventArgs e)
+        public void CUSTOMERS_Click(object sender, EventArgs e)
         {
             // 1. Close any other open child forms first
             foreach (Form child in this.MdiChildren)
@@ -82,7 +82,7 @@ namespace EAD_POS_SYSTEM
             newChild.Show();
         }
 
-        private void INVENTORY_Click(object sender, EventArgs e)
+        public void INVENTORY_Click(object sender, EventArgs e)
         {
             // 1. Close any other open child forms first
             foreach (Form child in this.MdiChildren)
@@ -101,7 +101,7 @@ namespace EAD_POS_SYSTEM
             newChild.Show();
         }
 
-        private void DISTRIBUTERS_Click(object sender, EventArgs e)
+        public void DISTRIBUTERS_Click(object sender, EventArgs e)
         {
             // 1. Close any other open child forms first
             foreach (Form child in this.MdiChildren)
@@ -120,7 +120,7 @@ namespace EAD_POS_SYSTEM
             newChild.Show();
         }
 
-        private void AUTOORDER_Click(object sender, EventArgs e)
+        public void AUTOORDER_Click(object sender, EventArgs e)
         {
             // 1. Close any other open child forms first
             foreach (Form child in this.MdiChildren)
@@ -139,7 +139,7 @@ namespace EAD_POS_SYSTEM
             newChild.Show();
         }
 
-        private void REPORTS_Click(object sender, EventArgs e)
+        public void REPORTS_Click(object sender, EventArgs e)
         {
             // 1. Close any other open child forms first
             foreach (Form child in this.MdiChildren)

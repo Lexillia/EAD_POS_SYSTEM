@@ -276,6 +276,7 @@
             this.btnRP.TabIndex = 16;
             this.btnRP.Text = "Record Payment";
             this.btnRP.UseVisualStyleBackColor = false;
+            this.btnRP.Click += new System.EventHandler(this.btnRP_Click);
             // 
             // btnUI
             // 
@@ -287,6 +288,7 @@
             this.btnUI.TabIndex = 15;
             this.btnUI.Text = "Update Inventory";
             this.btnUI.UseVisualStyleBackColor = false;
+            this.btnUI.Click += new System.EventHandler(this.btnUI_Click);
             // 
             // btnAC
             // 
@@ -298,6 +300,7 @@
             this.btnAC.TabIndex = 14;
             this.btnAC.Text = "Add Customer";
             this.btnAC.UseVisualStyleBackColor = false;
+            this.btnAC.Click += new System.EventHandler(this.btnAC_Click);
             // 
             // btnNS
             // 
@@ -309,6 +312,7 @@
             this.btnNS.TabIndex = 13;
             this.btnNS.Text = "&New Sales";
             this.btnNS.UseVisualStyleBackColor = false;
+            this.btnNS.Click += new System.EventHandler(this.btnNS_Click);
             // 
             // lblQuickActions
             // 
