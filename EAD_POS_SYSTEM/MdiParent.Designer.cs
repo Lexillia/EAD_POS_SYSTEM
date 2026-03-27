@@ -95,49 +95,49 @@
             // dASHBOARDToolStripMenuItem
             // 
             this.dASHBOARDToolStripMenuItem.Name = "dASHBOARDToolStripMenuItem";
-            this.dASHBOARDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dASHBOARDToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.dASHBOARDToolStripMenuItem.Text = "DASHBOARD";
             this.dASHBOARDToolStripMenuItem.Click += new System.EventHandler(this.dASHBOARDToolStripMenuItem_Click);
             // 
             // POS
             // 
             this.POS.Name = "POS";
-            this.POS.Size = new System.Drawing.Size(180, 22);
+            this.POS.Size = new System.Drawing.Size(151, 22);
             this.POS.Text = "POS";
             this.POS.Click += new System.EventHandler(this.pOSToolStripMenuItem_Click);
             // 
             // CUSTOMERS
             // 
             this.CUSTOMERS.Name = "CUSTOMERS";
-            this.CUSTOMERS.Size = new System.Drawing.Size(180, 22);
+            this.CUSTOMERS.Size = new System.Drawing.Size(151, 22);
             this.CUSTOMERS.Text = "CUSTOMERS";
             this.CUSTOMERS.Click += new System.EventHandler(this.CUSTOMERS_Click);
             // 
             // INVENTORY
             // 
             this.INVENTORY.Name = "INVENTORY";
-            this.INVENTORY.Size = new System.Drawing.Size(180, 22);
+            this.INVENTORY.Size = new System.Drawing.Size(151, 22);
             this.INVENTORY.Text = "INVENTORY";
             this.INVENTORY.Click += new System.EventHandler(this.INVENTORY_Click);
             // 
             // DISTRIBUTERS
             // 
             this.DISTRIBUTERS.Name = "DISTRIBUTERS";
-            this.DISTRIBUTERS.Size = new System.Drawing.Size(180, 22);
+            this.DISTRIBUTERS.Size = new System.Drawing.Size(151, 22);
             this.DISTRIBUTERS.Text = "DISTRIBUTORS";
             this.DISTRIBUTERS.Click += new System.EventHandler(this.DISTRIBUTERS_Click);
             // 
             // AUTOORDER
             // 
             this.AUTOORDER.Name = "AUTOORDER";
-            this.AUTOORDER.Size = new System.Drawing.Size(180, 22);
+            this.AUTOORDER.Size = new System.Drawing.Size(151, 22);
             this.AUTOORDER.Text = "AUTO-ORDER";
             this.AUTOORDER.Click += new System.EventHandler(this.AUTOORDER_Click);
             // 
             // REPORTS
             // 
             this.REPORTS.Name = "REPORTS";
-            this.REPORTS.Size = new System.Drawing.Size(180, 22);
+            this.REPORTS.Size = new System.Drawing.Size(151, 22);
             this.REPORTS.Text = "REPORTS";
             this.REPORTS.Click += new System.EventHandler(this.REPORTS_Click);
             // 
@@ -153,6 +153,7 @@
             this.Name = "MdiParent";
             this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MdiParent_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

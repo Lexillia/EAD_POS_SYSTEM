@@ -209,6 +209,11 @@ namespace EAD_POS_SYSTEM
                 }
             }
         }
+
+        private void MdiParent_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
     }
     
