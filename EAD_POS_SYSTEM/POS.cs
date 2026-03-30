@@ -26,5 +26,36 @@ namespace EAD_POS_SYSTEM
         {
 
         }
+
+        private void btnCash_Click(object sender, EventArgs e)
+        {
+            POSLogic logic = new POSLogic();
+
+            // Call the void method (Requirement Met)
+            logic.LogPayment("CASH");
+
+            // Update your UI Total to $0 after payment
+            lblTotalamount.Text = "$0";
+        }
+
+        private void btnSP_Click(object sender, EventArgs e)
+        {
+            // 1. Create the object
+            POSLogic logic = new POSLogic();
+
+            // 2. Call the method (Returns a value - Requirement Met)
+            string message = logic.GetSearchMessage(btnSP.Text);
+
+            // 3. Show the result using a built-in method
+            MessageBox.Show(message);
+        }
+
+        private void btnCompleteSale_Click(object sender, EventArgs e)
+        {
+            POSLogic logic = new POSLogic();
+            logic.ClearTransaction(); // This is the "Void" method reference
+            MessageBox.Show("Sale Finished!");
+
+        }
     }
 }

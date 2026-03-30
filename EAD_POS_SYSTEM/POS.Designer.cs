@@ -36,6 +36,11 @@
             this.lblsubtitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvProductList = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pnlReceipt = new System.Windows.Forms.Panel();
             this.txtSubtitle2 = new System.Windows.Forms.TextBox();
             this.btnCompleteSale = new System.Windows.Forms.Button();
@@ -48,11 +53,6 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pnltop.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).BeginInit();
@@ -98,6 +98,7 @@
             this.btnSP.TabIndex = 6;
             this.btnSP.Text = "&Search";
             this.btnSP.UseVisualStyleBackColor = true;
+            this.btnSP.Click += new System.EventHandler(this.btnSP_Click);
             // 
             // txtSsubtitle
             // 
@@ -162,6 +163,32 @@
             this.dgvProductList.Size = new System.Drawing.Size(546, 448);
             this.dgvProductList.TabIndex = 8;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = " Product Name";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Category";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Stock";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Price";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Add ";
+            this.Column5.Name = "Column5";
+            this.Column5.Text = "+";
+            // 
             // pnlReceipt
             // 
             this.pnlReceipt.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -203,6 +230,7 @@
             this.btnCompleteSale.TabIndex = 13;
             this.btnCompleteSale.Text = "Complete Sale";
             this.btnCompleteSale.UseVisualStyleBackColor = false;
+            this.btnCompleteSale.Click += new System.EventHandler(this.btnCompleteSale_Click);
             // 
             // lblTotalamount
             // 
@@ -264,6 +292,7 @@
             this.btnCash.TabIndex = 1;
             this.btnCash.Text = "CASH";
             this.btnCash.UseVisualStyleBackColor = false;
+            this.btnCash.Click += new System.EventHandler(this.btnCash_Click);
             // 
             // dgvDisplay
             // 
@@ -294,32 +323,6 @@
             // 
             this.Column8.HeaderText = "Quantity";
             this.Column8.Name = "Column8";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = " Product Name";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Category";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Stock";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Price";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Add ";
-            this.Column5.Name = "Column5";
-            this.Column5.Text = "+";
             // 
             // POS
             // 
