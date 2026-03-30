@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace EAD_POS_SYSTEM
 {
@@ -58,5 +61,52 @@ namespace EAD_POS_SYSTEM
         {
             return "<div class='total'>Total: $" + total.ToString() + "</div>";
         }
+
+        // Change 'YourPath' to the actual path of your .mdf file
+        string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\YourPath\POS_DB.mdf;Integrated Security=True";
+
+        public bool IsIdUnique(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                string query = "SELECT COUNT(*) FROM Products WHERE ProductID = @id";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+
+                conn.Open();
+                int count = (int)cmd.ExecuteScalar();
+                return count == 0; // Returns true if ID does NOT exist
+            }
+        }
+
+        public void AddProduct(int id, string name, double price)
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                string query = "INSERT INTO Products (ProductID, ProductName, Price) VALUES (@id, @name, @price)";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@price", price);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void LoadGrid(DataGridView dgv)
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                string query = "SELECT * FROM Products";
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt; // This links the SQL data to your UI grid
+            }
+        }
+
+
+
     }
 }
